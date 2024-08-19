@@ -35,6 +35,17 @@ MMMMMMMMMMMMMMMMMWx.    .,cxXMMMMMMMMMMM
 MMMMMMMMMMMMMMMMMMXc..,oONMMMMMMMMMMMMMM
 ''')
 print('por Urb@n')
+
+tecla_pausa= '-'
+tecla_avanzar = '1'
+tecla_ejecucion= '|'
+
+print(f'''
+ejecutar script:{tecla_ejecucion}
+pausar script:{tecla_pausa}
+ejecutar tecla para avanzar (primero ejecutar script):{tecla_avanzar} 
+''')
+
 def ejecucion():
         try:
             while not keyboard.is_pressed('-'):
@@ -49,3 +60,4 @@ def escuchando():
     keyboard.wait()
     
 escuchando()
+
